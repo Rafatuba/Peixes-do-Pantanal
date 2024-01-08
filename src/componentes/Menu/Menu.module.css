@@ -1,0 +1,14 @@
+.navegacao {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+@media (max-width: 744px) {
+    .navegacao {
+        height: 72px;
+    }
+}
