@@ -23,8 +23,6 @@ export default function Post() {
     .sort((a, b) => b.id - a.id)
     .slice(0, 4);
 
-    console.log(postsRecomendados)
-
   return (
     <PostModelo
       fotoCapa={`/assets/posts/${post.id}/capa.png`}
