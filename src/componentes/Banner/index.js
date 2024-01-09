@@ -1,6 +1,7 @@
 import styles from "./Banner.module.css";
 import circuloColorido from "assets/circulo_colorido.png";
-import fotoPrincipal from 'assets/douradopulando.png'
+import fotoPrincipal from "assets/douradopulando.png";
+import Fade from "react-reveal/Fade";
 
 export default function Banner() {
   return (
@@ -20,8 +21,20 @@ export default function Banner() {
       </div>
 
       <div className={styles.imagens}>
-        <img className={styles.circuloColorido} src={circuloColorido} aria-hidden={true} alt="circulo do fundo"/>
-        <img className={styles.fotoPrincipal} src={fotoPrincipal} alt="imagem do dourado pulando"/>
+        <img
+          className={styles.circuloColorido}
+          src={circuloColorido}
+          aria-hidden={true}
+          alt="circulo do fundo"
+        />
+
+        <Fade big>
+          <img
+            className={styles.fotoPrincipal}
+            src={fotoPrincipal}
+            alt="imagem do dourado pulando"
+          />
+        </Fade>
       </div>
     </div>
   );
